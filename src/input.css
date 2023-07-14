@@ -5,3 +5,23 @@
 .radial-blue {
   background: radial-gradient(lightyellow, lightblue);
 }
+
+#redCircle {
+  position: relative;
+  background-color: red;
+  overflow: hidden;
+}
+
+#blackCircle {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background-color: black;
+  transition: height 2s ease;
+}
+
+#redCircle:hover #blackCircle {
+  height: 100%;
+}
